@@ -1,23 +1,200 @@
-# HASH 雜湊函數
-- md5
-- sha1
-
-
-
-- linux指令
-- md5sum
-- Colab使用方式 : !md5sum 檔案名稱
-
-!md5sum --help
-
-!echo Iammydeargreatteacher > 1005.txt
-
-!cat 1005.txt
-
-!md5sum 1005.txt
-
-!echo iammydeargreatteacher > 1005a.txt
-
-!cat 1005a.txt
-
-!md5sum 1005a.txt
+{
+  “nbformat”：4，
+  “nbformat_minor”：0，
+  “元數據”：{
+    “合作”：{
+      “出處”：[]，
+      “collapsed_sections”：[]
+    },
+    “內核規範”：{
+      “名稱”：“ python3 ”，
+      “顯示名稱”：“ Python 3 ”
+    },
+    “語言信息”：{
+      “名稱”：“蟒蛇”
+    }
+  },
+  “細胞”：[
+    {
+      “cell_type”：“降價”，
+      “來源”：[
+        " # HASH 雜湊函數\n " ,
+        " - md5 \n " ,
+        " - sha1 \n " ,
+        " \n " ,
+        " \n " ,
+        " \n " ,
+        " - linux指令\n " ,
+        " - md5sum \n " ,
+        " - Colab 使用方式 : !md5sum 檔案名稱"
+      ],
+      “元數據”：{
+        “id”：“ Y82fcaiA4Bhq ”
+      }
+    },
+    {
+      “cell_type”：“代碼”，
+      “執行計數”：1，
+      “元數據”：{
+        “合作”：{
+          “base_uri”：“ https://localhost:8080/ ”
+        },
+        “id”：“ X1ckxy5r3PBj ”，
+        “outputId”：“ 45f80379-87d1-4ff6-f4dd-456571cedfdd ”
+      },
+      “輸出”：[
+        {
+          “輸出類型”：“流”，
+          “名稱”：“標準輸出”，
+          “文本”：[
+            "用法：md5sum [OPTION]... [FILE]... \n " ,
+            "打印或檢查 MD5（128 位）校驗和。\n " ,
+            " \n " ,
+            "沒有 FILE 或 FILE 為 - 時，讀取標準輸入。\n " ,
+            " \n " ,
+            "   -b, --binary 以二進制模式讀取\n " ,
+            "   -c, --check 從文件中讀取 MD5 和並檢查它們\n " ,
+            "       --tag 創建一個 BSD 風格的校驗和\n " ,
+            "   -t, --text 以文本模式讀取（默認）\n " ,
+            " \n " ,
+            "以下五個選項僅在驗證校驗和時有用：\n " ,
+            "       --ignore-missing 不會失敗或報告丟失文件的狀態\n " ,
+            "       --quiet 不要為每個成功驗證的文件打印 OK \n " ,
+            "       --status 不輸出任何內容，狀態碼顯示成功\n " ,
+            "       --strict 對於格式不正確的校驗和行退出非零\n " ,
+            "   -w, --warn 警告格式不正確的校驗和行\n " ,
+            " \n " ,
+            "       --help 顯示此幫助並退出\n " ,
+            "       --version 輸出版本信息並退出\n " ,
+            " \n " ,
+            "總和按照 ​​RFC 1321 中的描述計算。檢查時，輸入\n " ,
+            "應該是這個程序以前的輸出。默認模式是打印一個\n " ,
+            "帶有校驗和的行，一個空格，一個指示輸入模式的字符（'*' 表示二進制，\n "，
+            " ' ' 用於文本或二進制無關緊要的情況)，以及每個 FILE 的名稱。\n " ,
+            " \n " ,
+            " GNU coreutils 在線幫助：<http://www.gnu.org/software/coreutils/> \n " ,
+            "完整文檔位於： <http://www.gnu.org/software/coreutils/md5sum> \n " ,
+            "或通過以下方式在本地獲得： info '(coreutils) md5sum invocation' \n "
+          ]
+        }
+      ],
+      “來源”：[
+        " !md5sum --help "
+      ]
+    },
+    {
+      “cell_type”：“代碼”，
+      “來源”：[
+        " !echo Iammydeargreatteacher > 1005.txt "
+      ],
+      “元數據”：{
+        “id”：“ DkngeX_W3aFB ”
+      },
+      “執行計數”：2，
+      “輸出”：[]
+    },
+    {
+      “cell_type”：“代碼”，
+      “來源”：[
+        " !cat 1005.txt "
+      ],
+      “元數據”：{
+        “合作”：{
+          “base_uri”：“ https://localhost:8080/ ”
+        },
+        “id”：“ fhqQV5Hn3lZK ”，
+        “outputId”：“ 5bfa4b0f-7412-4287-b35c-08461b27e96f ”
+      },
+      “執行計數”：3，
+      “輸出”：[
+        {
+          “輸出類型”：“流”，
+          “名稱”：“標準輸出”，
+          “文本”：[
+            "我親愛的老師\n "
+          ]
+        }
+      ]
+    },
+    {
+      “cell_type”：“代碼”，
+      “來源”：[
+        " !md5sum 1005.txt "
+      ],
+      “元數據”：{
+        “合作”：{
+          “base_uri”：“ https://localhost:8080/ ”
+        },
+        “id”：“ SXdikq8g3rqI ”，
+        “outputId”：“ c0250c6d-8d89-4f57-8b46-833e72f8680f ”
+      },
+      “執行計數”：4，
+      “輸出”：[
+        {
+          “輸出類型”：“流”，
+          “名稱”：“標準輸出”，
+          “文本”：[
+            " e35ea17a34bbf4e55b3c1aecf158fd7c 1005.txt \n "
+          ]
+        }
+      ]
+    },
+    {
+      “cell_type”：“代碼”，
+      “來源”：[
+        " !echo iammydeargreatteacher > 1005a.txt "
+      ],
+      “元數據”：{
+        “id”：“ MOQDpj3k3qFC ”
+      },
+      “執行計數”：5，
+      “輸出”：[]
+    },
+    {
+      “cell_type”：“代碼”，
+      “來源”：[
+        " !cat 1005a.txt "
+      ],
+      “元數據”：{
+        “合作”：{
+          “base_uri”：“ https://localhost:8080/ ”
+        },
+        “id”：“ R4uYcVkn32Wl ”，
+        “outputId”：“ 5b88be2c-fb4e-4672-8d8b-8351b3298391 ”
+      },
+      “執行計數”：6，
+      “輸出”：[
+        {
+          “輸出類型”：“流”，
+          “名稱”：“標準輸出”，
+          “文本”：[
+            " iammydeargreatteacher \n "
+          ]
+        }
+      ]
+    },
+    {
+      “cell_type”：“代碼”，
+      “來源”：[
+        " !md5sum 1005a.txt "
+      ],
+      “元數據”：{
+        “合作”：{
+          “base_uri”：“ https://localhost:8080/ ”
+        },
+        “id”：“ prBWuC4O36yx ”，
+        “outputId”：“ 6831dad8-fada-4ecc-9a63-e3307495b97a ”
+      },
+      “執行計數”：7，
+      “輸出”：[
+        {
+          “輸出類型”：“流”，
+          “名稱”：“標準輸出”，
+          “文本”：[
+            " 2070c6e0d60347924196eecff7f4391a 1005a.txt \n "
+          ]
+        }
+      ]
+    }
+  ]
+}
